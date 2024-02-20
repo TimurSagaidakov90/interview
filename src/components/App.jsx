@@ -91,13 +91,13 @@ export function App() {
 };
 
 export function Button({
-                           size,
-                           label,
-                           color,
-                           onClick,
-                           disabled,
-                           isLoading,
-                       }) {
+   size,
+   label,
+   color,
+   onClick,
+   disabled,
+   isLoading,
+   }) {
     const className = useMemo(
         () => cn([size && `size_${size}`, color && `color_${color}`]),
         [color, size]
@@ -115,11 +115,11 @@ export function Button({
 };
 
 export function Key({
-                        value,
-                        removeKey,
-                        incrementUsedKeys,
-                        decrementUsedKeys,
-                    }) {
+    value,
+    removeKey,
+    incrementUsedKeys,
+    decrementUsedKeys,
+}) {
     const [isUsed, setUsedState] = useState(false);
     const [isLoading, setLoadingState] = useState(false);
 
